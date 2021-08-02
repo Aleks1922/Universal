@@ -1,6 +1,10 @@
 .modal
-  display: none
   overflow: auto
+  display: none
+  opacity: 0
+  &--visible
+    display: block
+    opacity: 1
   &__overlay
     background-color: #3BBDC4
     opacity: 0.5

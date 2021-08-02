@@ -30,7 +30,7 @@
           <li class="header-menu__item"><a href="#" class="header-menu__link">Web Design</a></li>
         </ul>
         <form action="#" class="header-request">
-          <button class="button header-button">ОСТАВИТЬ ЗАЯВКУ</button>
+          <button data-toggle="modal" class="button header-button">ОСТАВИТЬ ЗАЯВКУ</button>
         </form>
       </div>
       <article class="header-content">
@@ -55,7 +55,7 @@
           </div>
         </div>
         <aside class="recomended">
-          <h2 class="recomended-title">Рекомендуем </h2>
+          <h2 class="recomended-title">Рекомендуем</h2>
           <div class="recomended-block">
             <span class="recomended-subtitle recomended-subtitle--css">css</span>
             <p class="recomended-text">
@@ -91,9 +91,9 @@
     </div>
   </header>
   <footer></footer>
-  <div class="modal">
-    <div class="modal__overlay"></div>
-    <div class="modal__dialog">
+  <div class="modal modal--visible">
+    <div class="modal__overlay modal__overlay--visible"></div>
+    <div class="modal__dialog modal__dialog--visible">
       <a href="" class="modal__close">
         <img src="img/close.svg" alt="icon:close">
       </a>
@@ -116,6 +116,8 @@
       </form>
     </div>
   </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
