@@ -1,27 +1,35 @@
 .modal
   overflow: auto
-  display: none
   opacity: 0
+  display: none
   &--visible
-    display: block
     opacity: 1
+    display: block
+    height: 100%
+    overflow: auto
   &__overlay
+    height: 100%
     background-color: #3BBDC4
-    opacity: 0.5
+    opacity: 0
     position: fixed
     top: 0
     right: 0
     bottom: 0
     left: 0
     z-index: 999
+    overflow:
+    transition: opacity 0.3s ease
+    &--visible
+      opacity: 0.5
   &__form
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
   &__dialog
-    max-width: 450px
-    max-height: 90%
+    opacity: 0
+    width: 450px
+    min-height: max-content
     position: fixed
     z-index: 1000
     top: 50%
@@ -30,6 +38,9 @@
     background: #262D33
     border-radius: 10px
     padding: 20px 30px
+    transition: opacity 0.3s ease
+    &--visible
+      opacity: 1
   &__title
     font-style: normal
     font-weight: bold
@@ -40,11 +51,11 @@
     text-align: center
   &__input-group
     width: 100%
+    margin-bottom: 20px
     &--mobile
       width: 48%
   &__input
     width: 100%
-    margin-bottom: 20px
   &__message
     width: 100%
     min-height: 100px
