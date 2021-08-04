@@ -1,7 +1,6 @@
 @media ( max-width: 1200px  )
   .container
     max-width: 940px
-    background-color: red
   .header
     margin-bottom: 20px
     &-menu
@@ -13,8 +12,25 @@
       padding: 25px 0
     &__item
       padding: 0 15px
+  .footer
+    &-bottom
+      flex-direction: column
+      align-items: start
+      justify-content: center
+      &__text
+        max-width: 100%
+        margin-bottom: 20px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   160px,
+    #AC8EE3  160px, #AC8EE3  320px,
+    #4592FF  320px, #4592FF  480px,
+    #FFA34D  480px, #FFA34D  640px,
+    #3DC47E  640px, #3DC47E  800px,
+    #6E99AE 800px, #6E99AE 940px,
+    )
 
-  @media ( max-width: 992px  )
+@media ( max-width: 992px  )
   .container
     max-width: 740px
   .header
@@ -26,6 +42,22 @@
       margin-top: 10px
     &-button
       width: 240px
+  .main-content
+    height: 450px
+  .content
+    padding: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &-user
+      margin-bottom: 100px
+    &-info
+    &-tag
+      margin-bottom: 15px
+    &-title
+      font-size: 36px
+      line-height: 44px
+      margin-bottom: 20px
   .interesting
     &__list
       position: relative
@@ -44,6 +76,31 @@
     &__item
       padding: 0 20px
       flex: 1 0 50%
+  .footer
+    &__subtitle
+      margin-bottom: 15px
+    &__item
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 16px
+    &-midle
+      flex-wrap: wrap
+      height: 120px
+      padding: 10px 0
+    &-contacts
+      justify-content: space-between
+      margin-left: auto
+      height: 50px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   127px,
+    #AC8EE3  127px, #AC8EE3  254px,
+    #4592FF  254px, #4592FF  381px,
+    #FFA34D  381px, #FFA34D  508px,
+    #3DC47E  508px, #3DC47E  635px,
+    #6E99AE 635px, #6E99AE 740px,
+    )
+
 @media ( max-width: 768px  )
   .container
     max-width: 540px
@@ -113,6 +170,23 @@
           bottom: 0
   .section-main
     padding-top: 95px
+  .main-content
+    flex-direction: column
+  .content
+  .recomended
+    display: flex
+    height: 100px
+    &-title
+      display: none
+    &-block
+      overflow: hidden
+      padding: 10px
+      width: 110px
+      border-right: 1px solid #F5F5F5
+    &-text
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
   .interesting
     &__list
       &::after
@@ -134,6 +208,53 @@
     &__button
       flex: 0 1 40%
       margin-top: 20px
+  .footer
+    &-navbar
+      flex-wrap: wrap
+      height: 346px
+    &__list
+      flex: 0 0 33.3%
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 15px
+    &__item
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 16px
+    &-midle
+      flex-wrap: wrap
+      height: 120px
+      padding: 10px 0
+      justify-content: space-between
+    &-contacts
+      justify-content: space-between
+      margin-left: auto
+      flex-wrap: wrap
+      font-size: 12px
+      line-height: 16px
+      margin-left: 0
+      &__item
+        flex: 0 0 50%
+        gap: 20px
+      &__link
+        margin: 0
+    &-social
+      width: 110px
+      flex-wrap: wrap
+      margin-left: 0
+      &__link
+        margin-left: 10px
+        margin-bottom: 10px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   90px,
+    #AC8EE3  90px, #AC8EE3  180px,
+    #4592FF  180px, #4592FF  270px,
+    #FFA34D  270px, #FFA34D  360px,
+    #3DC47E  360px, #3DC47E  450px,
+    #6E99AE 450px, #6E99AE 540px,
+    )
+
 @media ( max-width: 568px  )
   .container
     max-width: 480px
@@ -185,3 +306,23 @@
       flex: 0 1 40%
       margin-top: 10px
       margin-left: 0
+  .footer
+    &-navbar
+      flex-wrap: wrap
+      height: 530px
+    &__list
+      flex: 0 0 50%
+    &-midle
+      height: 130px
+    &-contacts
+      justify-content: start
+      height: 50px
+    &-social
+      width: 100%
+      flex-wrap: wrap
+      margin-left: 0
+      justify-content: end
+      margin-top: 10px
+      &__link
+        margin: 0
+        margin-left: 10px
