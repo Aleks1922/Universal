@@ -1,0 +1,146 @@
+.article
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: $color-text
+  &-article
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-left: 35px
+    padding-top: 35px
+    color: inherit
+    width: 555px
+    height: 370px
+    background-color: #fff
+    border-radius: 10px
+    position: relative
+  &__name
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    color: #6E99AE
+    width: 228px
+    margin-bottom: 20px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $color-title
+    width: 238px
+    margin-bottom: 25px
+  &__text
+    width: 228px
+  &__image
+    width: 292px
+    height: 299px
+    position: absolute
+    right: 0
+    top: 15px
+  &-author
+    height: 55px
+    display: flex
+    width: 100%
+    border-top: 1px solid #D9DADB
+    align-self: flex-end
+    align-items: center
+    &__photo
+      width: 30px
+      height: 30px
+      margin-right: 10px
+      border-radius: 50%
+    &__name
+      font-weight: 900
+      color: $color-title
+      margin-right: 5px
+    &__text
+      margin-right: 15px
+    &__comment
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+      display: flex
+      align-items: center
+    &__number
+      margin-left: 5.75px
+
+.popular
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 19px 26px 25px 25px
+  border-radius: 10px
+  overflow: hidden
+  width: 263px
+  height: 370px
+  position: relative
+  &-img
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    height: 100%
+    width: 100%
+    z-index: -2
+    object-fit: cover
+  &-bg
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: -1
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)),
+  &-name
+    width: 92px
+    border-radius: 3px
+    padding: 5px 12px
+    background: #3DC47E
+    text-align: center
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+  &-content
+    &__tag
+      display: inline-block
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      color: #E7D9FF
+      margin-bottom: 23px
+    &__title
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #FFFFFF
+      margin-bottom: 27px
+    &__author
+      display: flex
+      align-items: center
+    &__avatar
+      height: 45px
+      width: 45px
+      margin-right: 10px
+      border-radius: 50%
+      overflow: hidden
+    &__name
+      color: #fff
+    &__details
+    &__info
+      display: flex
+      color: #fff
+      opacity: 0.4
+      justify-content: space-between
+      font-size: 12px
+      line-height: 15px
+      width: 100%
+    &__icon
+      margin-left: 8px
+      margin-right: 5px

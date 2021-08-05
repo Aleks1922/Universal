@@ -7,6 +7,11 @@
       width: 100%
       order: 3
       margin-top: 10px
+  .recomended
+    width: 255px
+    flex-shrink: 0
+    &-block
+      width: 100%
   .interesting
     &__list
       padding: 25px 0
@@ -42,22 +47,33 @@
       margin-top: 10px
     &-button
       width: 240px
+  .section-main
+    &::before
+      height: 375px
   .main-content
     height: 450px
   .content
     padding: 30px
-    display: flex
     flex-direction: column
     justify-content: space-between
-    &-user
-      margin-bottom: 100px
-    &-info
     &-tag
       margin-bottom: 15px
     &-title
-      font-size: 36px
-      line-height: 44px
+      font-size: 30px
+      line-height: 40px
       margin-bottom: 20px
+  .recomended
+    width: 245px
+    flex-shrink: 0
+    &-title
+      padding: 15px 20px
+    &-block
+      height: 80px
+      border-top: 1px solid #F5F5F5
+      padding: 10px 20px 15px 20px
+      cursor: pointer
+    &-text
+      line-height: 16px
   .interesting
     &__list
       position: relative
@@ -172,10 +188,18 @@
     padding-top: 95px
   .main-content
     flex-direction: column
+    height: 430px
   .content
+    width: 100%
+    min-height: 356px
+    height: 356px
+    &-title
+      font-size: 24px
+      line-height: 30px
   .recomended
     display: flex
-    height: 100px
+    width: 100%
+    height: 80px
     &-title
       display: none
     &-block
@@ -277,6 +301,32 @@
       margin-bottom: 10px
     &__info
       font-size: 10px
+  .section-main
+    &::before
+      height: 325px
+  .main-content
+    height: 400px
+  .content
+    min-height: 150px
+    height: 200px
+    padding: 20px
+    &-title
+      font-size: 18px
+      line-height: 24px
+      margin-bottom: 15px
+    &-wrapper
+      justify-content: end
+    &-user
+      display: none
+  .recomended
+    height: 200px
+    flex-direction: column
+    &-block
+      width: 100%
+      display: flex
+      align-items: center
+    &-subtitle
+      min-width: 100px
   .interesting
     &__list
       padding: 30px
