@@ -48,7 +48,7 @@
   <section class="section-main">
     <div class="container">
       <article class="main-content">
-        <div class="content">
+        <div class="content content--active" id="js">
           <img src="img/backgroung-mainpage.jpg" alt="" class="content-img">
           <div class="content-bg"></div>
           <div class="content-user">
@@ -69,33 +69,117 @@
             </button>
           </div>
         </div>
+        <div class="content" id="html">
+          <img src="img/html-tab.jpg" alt="" class="content-img">
+          <div class="content-bg"></div>
+          <div class="content-user">
+            <img src="img/avatar-main_content.png" alt="dhoto: user" class="content-user__avatar">
+            <div class="content-user__info">
+              <span class="content-user__name">Степан Гридов</span>
+              <span class="content-user__profession">Верстальщик</span>
+            </div>
+          </div>
+          <div class="content-info">
+            <span class="content-tag">HTML</span>
+            <h1 class="title content-title">Правильно вставляем <br> картинку на сайт <br> для Retina дисплея</h1>
+            <button class="button content-button">
+              <a href="#" class="content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="content" id="css">
+          <img src="img/css.jpg" alt="" class="content-img">
+          <div class="content-bg"></div>
+          <div class="content-user">
+            <img src="img/avatar-main_content.png" alt="dhoto: user" class="content-user__avatar">
+            <div class="content-user__info">
+              <span class="content-user__name">Андрей Степанов</span>
+              <span class="content-user__profession">Разработчик</span>
+            </div>
+          </div>
+          <div class="content-info">
+            <span class="content-tag">CSS</span>
+            <h1 class="title content-title">Как использовать CSS float <br> после того, как вышел Flexbox</h1>
+            <button class="button content-button">
+              <a href="#" class="content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="content" id="wd">
+          <img src="img/wd-tabs.jpg" alt="" class="content-img">
+          <div class="content-bg"></div>
+          <div class="content-user">
+            <img src="img/avatar-main_content.png" alt="dhoto: user" class="content-user__avatar">
+            <div class="content-user__info">
+              <span class="content-user__name">Анна Филипенко</span>
+              <span class="content-user__profession">Web-дизайнер</span>
+            </div>
+          </div>
+          <div class="content-info">
+            <span class="content-tag">Web design</span>
+            <h1 class="title content-title">ТОП-10 плагинов для Figma</h1>
+            <button class="button content-button">
+              <a href="#" class="content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="content" id="css-2">
+          <img src="img/scc-2.jpg" alt="" class="content-img">
+          <div class="content-bg"></div>
+          <div class="content-user">
+            <img src="img/avatar-main_content.png" alt="dhoto: user" class="content-user__avatar">
+            <div class="content-user__info">
+              <span class="content-user__name">Федор Игнатов</span>
+              <span class="content-user__profession">Разработчик</span>
+            </div>
+          </div>
+          <div class="content-info">
+            <span class="content-tag">CSS</span>
+            <h1 class="title content-title">Возможности CSS Grid Layout, <br> которые уже можно применять</h1>
+            <button class="button content-button">
+              <a href="#" class="content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
+              </a>
+            </button>
+          </div>
+        </div>
         <aside class="recomended">
           <h2 class="recomended-title">Рекомендуем</h2>
-          <div data-atribute="#css" class="recomended-block">
-            <span class="recomended-subtitle recomended-subtitle--css">css</span>
+          <div data-target="#css" class="recomended-block">
+            <span class=" recomended-subtitle recomended-subtitle--css">css</span>
             <p class="recomended-text">
               Как использовать CSS float после того, как вышел Flexbox
             </p>
           </div>
-          <div data-atribute="#js" class="recomended-block">
+          <div data-target="#js" class="recomended-block recomended-block--active">
             <span class="recomended-subtitle recomended-subtitle--js">javascript</span>
             <p class="recomended-text">
               На каком стандарте писать скрипты, если я фрилансер
             </p>
           </div>
-          <div data-atribute="#html" class="recomended-block">
+          <div data-target="#html" class="recomended-block">
             <span class="recomended-subtitle recomended-subtitle--html">html</span>
             <p class="recomended-text">
               Правильно вставляем картинку на сайт для Retina дисплея
             </p>
           </div>
-          <div data-atribute="#wd" class="recomended-block">
+          <div data-target="#wd" class="recomended-block">
             <span class="recomended-subtitle recomended-subtitle--wd">Web design</span>
             <p class="recomended-text">
               ТОП-10 плагинов для Figma
             </p>
           </div>
-          <div data-atribute="#css-2" class="recomended-block">
+          <div data-target="#css-2" class="recomended-block">
             <span class="recomended-subtitle recomended-subtitle--css2">CSS</span>
             <p class="recomended-text">
               Возможности CSS Grid Layout , которые уже можно применять
@@ -137,8 +221,8 @@
         </form>
       </div>
       <!-- /.subscribe -->
-      <div class="color-line"></div>
       <div class="footer-navbar">
+        <div class="color-line"></div>
         <ul class="footer__list">
           <li class="footer__subtitle">
             <a href="#" class="footer__link">Новости</a>
@@ -323,6 +407,7 @@
     </div>
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

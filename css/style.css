@@ -573,6 +573,7 @@ img {
 }
 
 .content {
+  display: none;
   z-index: 1;
   opacity: 1;
   position: relative;
@@ -580,6 +581,10 @@ img {
       -ms-flex: 1 1 877px;
           flex: 1 1 877px;
   padding: 55px;
+}
+
+.content--active {
+  display: block;
 }
 
 .content-img {
@@ -700,6 +705,11 @@ img {
   height: 99px;
   border-top: 1px solid #F5F5F5;
   padding: 17px 25px 19px 25px;
+  cursor: pointer;
+}
+
+.recomended-block--active {
+  background-color: #F5F5F5;
 }
 
 .recomended-subtitle {
@@ -795,8 +805,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 249px;
-  border-bottom: 1px solid #D9DADB;
+  height: 240px;
+  position: relative;
+  padding-top: 35px;
+  margin-bottom: 64px;
 }
 
 .footer__list {
@@ -834,6 +846,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 109px;
+  border-top: 1px solid #D9DADB;
   border-bottom: 1px solid #D9DADB;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -923,9 +936,16 @@ img {
   margin-left: 10px;
 }
 
+.subscribe__input {
+  width: 313px;
+}
+
 .color-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 5px;
-  margin-bottom: 30px;
   background: repeating-linear-gradient(to right, #FF4F52 0, #FF4F52 195px, #AC8EE3 195px, #AC8EE3 390px, #4592FF 390px, #4592FF 585px, #FFA34D 585px, #FFA34D 780px, #3DC47E 780px, #3DC47E 975px, #6E99AE 975px, #6E99AE 1140px);
 }
 
@@ -1343,6 +1363,9 @@ img {
             flex: 0 1 40%;
     margin-top: 20px;
   }
+  .subscribe__input {
+    width: 214px;
+  }
   .footer-navbar {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1484,6 +1507,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 530px;
+    margin-bottom: 30px;
   }
   .footer__list {
     -webkit-box-flex: 0;
@@ -1494,23 +1518,36 @@ img {
     height: 130px;
   }
   .footer-contacts {
+    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
     height: 50px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
+  }
+  .footer-contacts__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
   }
   .footer-social {
-    width: 100%;
+    width: 200px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: 0;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
-    margin-top: 10px;
+    margin-top: 0;
   }
   .footer-social__link {
     margin: 0;
     margin-left: 10px;
+  }
+  .footer-bottom {
+    height: 180px;
   }
 }

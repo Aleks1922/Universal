@@ -2,8 +2,10 @@
   background-color: #fff
   &-navbar
     display: flex
-    height: 249px
-    border-bottom: 1px solid #D9DADB
+    height: 240px
+    position: relative
+    padding-top: 35px
+    margin-bottom: 64px
   &__list
     width: 195px
     &:nth-last-of-type(1)
@@ -27,6 +29,7 @@
   &-midle
     display: flex
     height: 109px
+    border-top: 1px solid #D9DADB
     border-bottom: 1px solid #D9DADB
     align-items: center
   &-contacts
@@ -78,9 +81,14 @@
   &__button
     padding: 10px 25px
     margin-left: 10px
+  &__input
+    width: 313px
 .color-line
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
   height: 5px
-  margin-bottom: 30px
   background: repeating-linear-gradient(to right,
   #FF4F52   0, #FF4F52   195px,
   #AC8EE3  195px, #AC8EE3  390px,

@@ -6,11 +6,14 @@
   overflow: hidden
   margin-bottom: 30px
 .content
+  display: none
   z-index: 1
   opacity: 1
   position: relative
   flex: 1 1 877px
   padding: 55px
+  &--active
+    display: block
   &-img
     position: absolute
     top: 0
@@ -92,6 +95,9 @@
     height: 99px
     border-top: 1px solid #F5F5F5
     padding: 17px 25px 19px 25px
+    cursor: pointer
+    &--active
+      background-color: #F5F5F5
   &-subtitle
     display: inline-block
     font-style: normal

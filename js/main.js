@@ -78,4 +78,18 @@ $(document).ready(function () {
     });
   }
 
+  //mask phone
+  $('.phone-with-ddd').mask('+7 (000) 000-00-00');
+
+  var tabItem = $(".recomended-block");
+  var contentItem = $(".content");
+
+  tabItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    tabItem.removeClass("recomended-block--active");
+    contentItem.removeClass("content--active");
+    $(activeContent).addClass("content--active");
+    $(this).addClass("recomended-block--active");
+  })
+
 });
