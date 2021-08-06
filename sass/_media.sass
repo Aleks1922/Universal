@@ -35,6 +35,26 @@
     #6E99AE 800px, #6E99AE 940px,
     )
 
+  .article
+    &-grid
+      display: grid
+      grid-template: repeat(4, 170px) / repeat(3, 1fr)
+      gap: 30px
+    &-mini
+      display: none
+    &-tags
+      grid-row: 3/5
+      grid-column: 2/3
+    &-social
+      grid-row: 4/5
+      grid-column: 3/4
+  .popular
+    grid-column: 3/4
+    grid-row: 1/3
+  .download
+    grid-row: 3/4
+    grid-column: 3/4
+
 @media ( max-width: 992px  )
   .container
     max-width: 740px
@@ -117,6 +137,89 @@
     #6E99AE 635px, #6E99AE 740px,
     )
 
+  .article
+    &__title
+      &--social
+        margin-bottom: 15px
+    &-grid
+      display: grid
+      grid-template: repeat(4, 130px) / repeat(3, 1fr)
+      gap: 30px
+    &-mini
+      display: none
+    &-tags
+      grid-row: 3/5
+      grid-column: 2/3
+      padding: 20px
+      &::before
+        top: 50px
+      &__text
+        margin-bottom: 30px
+      &__link
+        margin-right: 5px
+        margin-bottom: 10px
+        &--none
+          display: none
+    &-social
+      padding: 20px 25px
+      grid-row: 4/5
+      grid-column: 3/4
+      &__icon
+        width: 40px
+        height: 40px
+    &-developer
+      &__image
+        height: 200px
+        background-position: bottom
+    &-article
+      padding: 20px
+      &::before
+        bottom: 80px
+    &__image
+      top: 0
+      width: 200px
+    &__name
+      margin-bottom: 20px
+    &__text
+      display: none
+    &-author
+      &__name
+        width: 100px
+      &__text
+        display: inline-block
+        width: 230px
+  .popular
+    padding: 10px
+    grid-column: 3/4
+    grid-row: 1/3
+    &-content
+      &__avatar
+        width: 30px
+        height: 30px
+  .download
+    padding: 15px 15px 10px 15px
+    grid-row: 3/4
+    grid-column: 3/4
+    flex-direction: row
+    flex-wrap: wrap
+    &::before
+      bottom: 40px
+    &__title
+      width: 100%
+    &__file
+      top: 15px
+      right: 15px
+    &__format
+      margin-bottom: 0
+      width: 90px
+      display: flex
+      align-items: center
+    &__link
+      width: 90px
+      margin-left: auto
+    &__icon
+      display: none
+
 @media ( max-width: 768px  )
   .container
     max-width: 540px
@@ -124,14 +227,14 @@
     position: fixed
     width: 100%
     z-index: 10
-    &-request
-      &--mobile
-        display: none
     &-navbar
       padding: 10px 0
       top: 0
       left: 0
       z-index: 5
+    &-button
+      &--mobile
+        display: none
     &-menu
       position: fixed
       top: 53px
@@ -281,6 +384,32 @@
     #6E99AE 450px, #6E99AE 540px,
     )
 
+  .article
+    &__title
+      &--social
+        margin-bottom: 15px
+    &-grid
+      display: grid
+      grid-template: repeat(5, 130px) / repeat(2, 1fr)
+      gap: 30px
+    &-article
+      grid-row: 1/3
+      grid-column: 1/3
+    &-tags
+      display: none
+    &-social
+      grid-row: 5/6
+      grid-column: 2/3
+    &-developer
+      grid-row: 3/5
+      grid-column: 1/2
+  .popular
+    grid-column: 2/3
+    grid-row: 3/5
+  .download
+    grid-row: 5/6
+    grid-column: 1/2
+
 @media ( max-width: 568px  )
   .container
     max-width: 480px
@@ -386,3 +515,55 @@
         margin-left: 10px
     &-bottom
       height: 180px
+  .article
+    &__title
+      &--social
+        margin-bottom: 15px
+    &-grid
+      display: grid
+      grid-template: repeat(8, 120px) / repeat(1, 1fr)
+      gap: 30px
+    &-article
+      grid-row: 1/3
+      grid-column: 1
+    &-author
+      height: 40px
+      &__text
+        display: none
+      &__name
+        width: 120px
+      &__comment
+        margin-left: auto
+    &__image
+      opacity: 0.2
+    &__info
+      width: 100%
+    &-social
+      grid-row: 8/9
+      grid-column: 1
+    &-developer
+      grid-row: 5/7
+      grid-column: 1
+  .popular
+    grid-column: 1
+    grid-row: 3/5
+  .download
+    grid-row: 7/8
+    grid-column: 1
+    flex-direction: row
+    flex-wrap: wrap
+    &::before
+      bottom: 40px
+    &__title
+      width: 100%
+    &__file
+      width: 40px
+      top: 20px
+    &__format
+      margin-bottom: 0
+      width: 100px
+      display: flex
+      align-items: center
+    &__link
+      width: 100px
+      margin-left: auto
