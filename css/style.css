@@ -437,7 +437,7 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   background: #E5E5E5;
 }
 
@@ -489,6 +489,7 @@ img {
 }
 
 .button {
+  font-family: 'Lato', sans-serif;
   background: #4592FF;
   color: #fff;
   border-radius: 20px;
@@ -1786,6 +1787,7 @@ img {
 }
 
 .article-big__tag {
+  display: inline-block;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
