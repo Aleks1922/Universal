@@ -92,4 +92,28 @@ $(document).ready(function () {
     $(this).addClass("recomended-block--active");
   })
 
+  var newsIcon = $(".news__icon");
+
+  newsIcon.on("click", function (event) {
+    $(this).toggleClass('news__icon--active');
+  })
+
+  const hotSlider = new Swiper('.hot-slider__container', {
+    // Optional parameters
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 3000,
+    },
+
+    speed: 1500,
+
+  });
+
+
 });

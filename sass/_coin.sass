@@ -1,0 +1,39 @@
+.coin
+  height: 270px
+  background-image: url(../img/coin.jpg)
+  background-position: center
+  object-fit: cover
+  position: relative
+  text-align: center
+  padding-top: 50px
+  padding-bottom: 55px
+  margin-bottom: 60px
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: #FFFFFF
+    z-index: 10
+    position: relative
+    margin-bottom: 25px
+  &-button
+    padding: 10px 22px 10px 20px
+    display: flex
+    text-align: center
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+  &-link
+    display: inline-block
+    z-index: 10
+    position: relative

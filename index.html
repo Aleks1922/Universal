@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -195,6 +196,28 @@
       </article>
     </div>
   </section>
+  <section class="interesting">
+    <div class="container">
+      <ul class="interesting__list">
+        <li class="interesting__item"><a href="#" class="interesting__link">
+            <h5 class="interesting__title">25 способов настроить&nbsp;слайдер </h5>
+            <img src="img/line-2.png" alt="" class="interesting__photo">
+          </a></li>
+        <li class="interesting__item"><a href="#" class="interesting__link">
+            <h5 class="interesting__title">Главные фишки фрилансера</h5>
+            <img src="img/line-1.png" alt="" class="interesting__photo">
+          </a></li>
+        <li class="interesting__item"><a href="#" class="interesting__link">
+            <h5 class="interesting__title">Техника управлеия временем “Помодоро”</h5>
+            <img src="img/line-3.png" alt="" class="interesting__photo">
+          </a></li>
+        <li class="interesting__item"><a href="#" class="interesting__link">
+            <h5 class="interesting__title">Что нужно знать о Git и GitHub </h5>
+            <img src="img/line-4.png" alt="" class="interesting__photo">
+          </a></li>
+      </ul>
+    </div>
+  </section>
   <section class="article">
     <div class="container">
       <div class="article-grid">
@@ -284,17 +307,13 @@
         <div class="article-tags">
           <span class="article-tags__text">теги</span>
           <div class="article-tags__block">
-            <a href="#" class="article-tags__link">Forest</a>
-            <a href="#" class="article-tags__link">Hover tag</a>
-            <a href="#" class="article-tags__link">Nature</a>
-            <a href="#" class="article-tags__link">Recreation</a>
-            <a href="#" class="article-tags__link">Tent</a>
-            <a href="#" class="article-tags__link">Fresh air</a>
+            <a href="#" class="article-tags__link">Forest</a><a href="#" class="article-tags__link">Hover tag</a>
+            <a href="#" class="article-tags__link">Nature</a><a href="#" class="article-tags__link">Recreation</a>
+            <a href="#" class="article-tags__link">Tent</a><a href="#" class="article-tags__link">Fresh air</a>
             <a href="#" class="article-tags__link article-tags__link--none">Summer</a>
-            <a href="#" class="article-tags__link">Mountains</a>
-            <a href="#" class="article-tags__link">Wood</a>
-            <a href="#" class="article-tags__link">Map</a>
-            <a href="#" class="article-tags__link article-tags__link--m0">Sun</a>
+            <a href="#" class="article-tags__link">Mountains</a><a href="#" class="article-tags__link">Wood</a>
+            <a href="#" class="article-tags__link">Map</a><a href="#"
+              class="article-tags__link article-tags__link--m0">Sun</a>
             <a href="#" class="article-tags__link article-tags__link--none">Wild animals</a>
             <a href="#" class="article-tags__link article-tags__link--none">Night</a>
           </div>
@@ -322,29 +341,359 @@
       </div>
     </div>
   </section>
-  <section class="interesting">
+  <section class="coin">
     <div class="container">
-      <ul class="interesting__list">
-        <li class="interesting__item"><a href="#" class="interesting__link">
-            <h5 class="interesting__title">25 способов настроить&nbsp;слайдер </h5>
-            <img src="img/line-2.png" alt="" class="interesting__photo">
-          </a></li>
-        <li class="interesting__item"><a href="#" class="interesting__link">
-            <h5 class="interesting__title">Главные фишки фрилансера</h5>
-            <img src="img/line-1.png" alt="" class="interesting__photo">
-          </a></li>
-        <li class="interesting__item"><a href="#" class="interesting__link">
-            <h5 class="interesting__title">Техника управлеия временем “Помодоро”</h5>
-            <img src="img/line-3.png" alt="" class="interesting__photo">
-          </a></li>
-        <li class="interesting__item"><a href="#" class="interesting__link">
-            <h5 class="interesting__title">Что нужно знать о Git и GitHub </h5>
-            <img src="img/line-4.png" alt="" class="interesting__photo">
-          </a></li>
-      </ul>
+      <h2 class="title coin-title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
+      <a href="#" class="coin-link">
+        <button class="button coin-button">
+          <span class="coin-button__text">Читать статью</span>
+          <img src="img/Arrow.svg" alt="icon: arrow" class="coin-button__icon">
+        </button>
+      </a>
     </div>
   </section>
-  <footer class="footer">
+  <section class="news">
+    <div class="container news-container">
+      <article class="news-block">
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-1.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--1st">Новости</div>
+            <h2 class="title news-item__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h2>
+            <p class="news-item__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто
+              работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+            <div class="news-item__stats">
+              <span class="news-item__date">6 августа</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              342
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              830
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon news__icon--top">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-2.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--2nd">Мнения</div>
+            <h2 class="title news-item__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h2>
+            <p class="news-item__text">Среди новичков распространено мнение, что если пройти какой-то крутой
+              онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика.</p>
+            <div class="news-item__stats">
+              <span class="news-item__date">7 октября</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              27
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              129
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-3.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--3rd">Новости</div>
+            <h2 class="title news-item__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...
+            </h2>
+            <p class="news-item__text">Сегодня мы узнали, что серверы Telegram не доступны на территории России.
+              Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера. </p>
+            <div class="news-item__stats">
+              <span class="news-item__date">12 декабря</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              30
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              284
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-4.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--2nd">Мнения</div>
+            <h2 class="title news-item__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h2>
+            <p class="news-item__text">Один из читателей предположил, что если в портфолио положить несуществующий
+              проект, то ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики... </p>
+            <div class="news-item__stats">
+              <span class="news-item__date">20 июля</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              102
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              1293
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-5.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--3rd">Горячее</div>
+            <h2 class="title news-item__title">Список стран, куда можно улететь</h2>
+            <p class="news-item__text">Если вы приняли решение переехать в другую страну, чтобы найти там работу,
+              сначала посмотрите на список стран, который мы подготовили для вас. Внутри важная информация про...</p>
+            <div class="news-item__stats">
+              <span class="news-item__date">22 октября</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              5
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              82
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+        <div class="news-item">
+          <div class="news-item__image">
+            <img src="img/news-6.png" alt="news-image">
+          </div>
+          <div class="news-item__info">
+            <div class="news-item__tag news-item__tag--4th">Подборки</div>
+            <h2 class="title news-item__title">Список Youtube каналов для тех, кто только начинает изучать разработку
+            </h2>
+            <p class="news-item__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы,
+              посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы. </p>
+            <div class="news-item__stats">
+              <span class="news-item__date">26 октября</span>
+              <img class="news-item__comment" src="img/Comment.svg" alt="icon: comment">
+              101
+              <img class="news-item__like" src="img/like.svg" alt="icon: like">
+              432
+            </div>
+          </div>
+          <svg width="14" height="18" class="news__icon">
+            <use xlink:href="img/sprite.svg#Bookmark"></use>
+          </svg>
+        </div>
+      </article>
+      <aside class="news-publication">
+        <h3 class="news-publication__title">Недавно опубликовано</h3>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-1.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Работа на удаленке, как это теперь</h5>
+            <span class="news-publication__time">15 минут назад</span>
+          </div>
+          <img src="img/1.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-2.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Для чего нужен Node.js и с чем...</h5>
+            <span class="news-publication__time">32 минуты назад</span>
+          </div>
+          <img src="img/2.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-3.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Работа в Google: собеседования и...</h5>
+            <span class="news-publication__time">38 минут назад</span>
+          </div>
+          <img src="img/3.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-4.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Переезд в Нью Йорк для работы по...</h5>
+            <span class="news-publication__time">53 минуты назад</span>
+          </div>
+          <img src="img/4.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-5.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Почему родители против того, чтобы...</h5>
+            <span class="news-publication__time">1 час назад</span>
+          </div>
+          <img src="img/5.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-6.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Прокрастинация: побороть отклады...</h5>
+            <span class="news-publication__time">1 час назад</span>
+          </div>
+          <img src="img/6.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__item">
+          <div class="news-publication__image">
+            <img src="img/public-7.png" alt="public-image">
+          </div>
+          <div class="news-publication__info">
+            <h5 class="news-publication__subtitle">Правки от заказчика могут быть...</h5>
+            <span class="news-publication__time">2 часа назад</span>
+          </div>
+          <img src="img/7.svg" alt="public-number" class="news-publication__number">
+        </a>
+        <a href="#" class="news-publication__link">Read more</a>
+      </aside>
+    </div>
+  </section>
+  <section class="hot">
+    <div class="container hot-container">
+      <div class="hot-slider">
+        <!-- Slider main container -->
+        <div class="swiper-container hot-slider__container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper hot-slider__wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hot-slider__slide">
+              <img src="img/slider-image.jpg" alt="slider-image" class="hot-slider__image">
+              <span class="hot-slider__bg"></span>
+              <div class="hot-slider__content">
+                <span class="hot-slider__tag">Горячее</span>
+                <div class="hot-slider__author">
+                  <img src="img/slider-avatar.png" alt="user:avatar" class="hot-slider__avatar">
+                  <span class="hot-slider__username">Оксана Пушкина</span>
+                  <span class="hot-slider__profession">Фотограф</span>
+                </div>
+                <h2 class="title hot-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="button hot-slider__button">
+                  <img src="img/icon-slider-button.svg" alt="icon: slider" class="hot-slider__icon">
+                  <span class="hot-slider__more">Смотреть фото</span>
+                  <span>26</span>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hot-slider__slide">
+              <img src="img/slider-image.jpg" alt="slider-image" class="hot-slider__image">
+              <span class="hot-slider__bg"></span>
+              <div class="hot-slider__content">
+                <span class="hot-slider__tag">Горячее</span>
+                <div class="hot-slider__author">
+                  <img src="img/slider-avatar.png" alt="user:avatar" class="hot-slider__avatar">
+                  <span class="hot-slider__username">Оксана Пушкина</span>
+                  <span class="hot-slider__profession">Фотограф</span>
+                </div>
+                <h2 class="title hot-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="button hot-slider__button">
+                  <img src="img/icon-slider-button.svg" alt="icon: slider" class="hot-slider__icon">
+                  <span class="hot-slider__more">Смотреть фото</span>
+                  <span>26</span>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hot-slider__slide">
+              <img src="img/slider-image.jpg" alt="slider-image" class="hot-slider__image">
+              <span class="hot-slider__bg"></span>
+              <div class="hot-slider__content">
+                <span class="hot-slider__tag">Горячее</span>
+                <div class="hot-slider__author">
+                  <img src="img/slider-avatar.png" alt="user:avatar" class="hot-slider__avatar">
+                  <span class="hot-slider__username">Оксана Пушкина</span>
+                  <span class="hot-slider__profession">Фотограф</span>
+                </div>
+                <h2 class="title hot-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="button hot-slider__button">
+                  <img src="img/icon-slider-button.svg" alt="icon: slider" class="hot-slider__icon">
+                  <span class="hot-slider__more">Смотреть фото</span>
+                  <span>26</span>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hot-slider__slide">
+              <img src="img/slider-image.jpg" alt="slider-image" class="hot-slider__image">
+              <span class="hot-slider__bg"></span>
+              <div class="hot-slider__content">
+                <span class="hot-slider__tag">Горячее</span>
+                <div class="hot-slider__author">
+                  <img src="img/slider-avatar.png" alt="user:avatar" class="hot-slider__avatar">
+                  <span class="hot-slider__username">Оксана Пушкина</span>
+                  <span class="hot-slider__profession">Фотограф</span>
+                </div>
+                <h2 class="title hot-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="button hot-slider__button">
+                  <img src="img/icon-slider-button.svg" alt="icon: slider" class="hot-slider__icon">
+                  <span class="hot-slider__more">Смотреть фото</span>
+                  <span>26</span>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide hot-slider__slide">
+              <img src="img/slider-image.jpg" alt="slider-image" class="hot-slider__image">
+              <span class="hot-slider__bg"></span>
+              <div class="hot-slider__content">
+                <span class="hot-slider__tag">Горячее</span>
+                <div class="hot-slider__author">
+                  <img src="img/slider-avatar.png" alt="user:avatar" class="hot-slider__avatar">
+                  <span class="hot-slider__username">Оксана Пушкина</span>
+                  <span class="hot-slider__profession">Фотограф</span>
+                </div>
+                <h2 class="title hot-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="button hot-slider__button">
+                  <img src="img/icon-slider-button.svg" alt="icon: slider" class="hot-slider__icon">
+                  <span class="hot-slider__more">Смотреть фото</span>
+                  <span>26</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+      <div class="hot-article">
+        <div class="article-big">
+          <img src="img/hot-block.png" alt="" class="article-big__bg">
+          <div class="article-big__wrapper">
+            <span class="article-big__tag">Карьера</span>
+            <h2 class="title article-big__title">Вопросы на собеседовании для джуна</h2>
+            <p class="article-big__text">Каверзные и не очень вопросы, которых боятся новички, когда идут на
+              собеседование
+            </p>
+            <button class="button article-big__button">
+              <span>Читать далее</span>
+              <img class="article-big__icon" src="img/Arrow.svg" alt="icon: arrow">
+            </button>
+          </div>
+        </div>
+        <div class="article-little">
+          <h5 class="title article-little__title">Зарядка для глаз</h5>
+          <p class="article-little__text">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже
+            если...</p>
+          <span class="article-little__date">15 октября</span>
+        </div>
+        <div class="article-little">
+          <h5 class="title article-little__title">Топ плагинов jQuery</h5>
+          <p class="article-little__text">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</p>
+          <span class="article-little__date">14 октября</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class=" footer">
     <div class="container">
       <div class="subscribe">
         <form action="send.php" method="POST" class="form subscribe__form">
@@ -505,8 +854,10 @@
       </div>
       <div class="footer-bottom">
         <p class="footer-bottom__text">
-          Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости,
-          видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.
+          Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,
+          новости,
+          видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте
+          ссылку.
         </p>
         <span class="footer-bottom__copyright">
           © 2020 Universal Magazine
@@ -541,6 +892,7 @@
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
