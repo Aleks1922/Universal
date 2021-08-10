@@ -1,16 +1,19 @@
 @font-face
   font-family: 'Lato'
-  src: url('fonts/Lato-Black.eot')
-  src: local('☺'), url('fonts/Lato-Black.woff') format('woff'), url('fonts/Lato-Black.ttf') format('truetype'), url('fonts/Lato-Black.svg') format('svg')
-  font-weight: normal
+  src: url('../Fonts/Lato-Black.eot')
+  src: url('../Fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), url('../Fonts/Lato-Black.woff') format('woff'),
+  url('../Fonts/Lato-Black.ttf') format('truetype'),
+  url('../Fonts/Lato-Black.svg#Lato-Black') format('svg')
+  font-weight: 900
   font-style: normal
+  font-display: swap
 
 @font-face
-  font-family: ''
-  src: url('fonts/Lato-Regular.eot')
-  src: local('☺'), url('fonts/Lato-Regular.woff') format('woff'), url('fonts/Lato-Regular.ttf') format('truetype'), url('fonts/Lato-Regular.svg') format('svg')
+  font-family: 'Lato'
+  src: url('../Fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),url('../Fonts/Lato-Regular.woff2') format('woff2'),url('../Fonts/Lato-Regular.woff') format('woff'),url('../Fonts/Lato-Regular.ttf') format('truetype'),url('../Fonts/Lato-Regular.svg#Lato-Regular') format('svg')
   font-weight: normal
   font-style: normal
+  font-display: swap
 
 html,
 body
@@ -18,7 +21,7 @@ body
   width: 100%
   font-size: 100%
   line-height: 1
-  font-family: 'Lato', sans-serif
+  font-family: 'Lato'
   background: #E5E5E5
 
 .title
@@ -51,8 +54,8 @@ img
   color: #939699
 
 .button
-  font-family: 'Lato', sans-serif
   background: #4592FF
+  font-family: 'Lato'
   color: #fff
   border-radius: 20px
   font-style: normal
