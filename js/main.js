@@ -101,11 +101,6 @@ $(document).ready(function () {
   const hotSlider = new Swiper('.hot-slider__container', {
     // Optional parameters
     loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
 
     autoplay: {
       delay: 3000,
@@ -113,6 +108,21 @@ $(document).ready(function () {
 
     speed: 1500,
 
+    breakpoints: {
+      568: {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      },
+    }
+  });
+
+  const publicationSlider = new Swiper('.publication-slider', {
+    // Optional parameters
+    loop: true,
+
+    speed: 1000,
   });
 
 

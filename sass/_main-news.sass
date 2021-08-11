@@ -1,0 +1,140 @@
+.news
+  &-wrapper
+    width: 946px
+    margin-left: auto
+    margin-right: auto
+.main
+  background-image: url(../img/image-main.jpg)
+  background-size: cover
+  background-position: center
+  position: relative
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+  &-container
+    position: relative
+    display: flex
+    justify-content: center
+  &-wrapper
+    position: relative
+    padding: 61px 0 72px 0
+  &-header
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+    &__tag
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      color: #4592FF
+    &__navigation
+      display: flex
+      align-items: center
+    &__item
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      &:nth-last-of-type(2)
+        margin-right: 20px
+        margin-left: 30px
+    &__link
+      color: inherit
+      display: flex
+      align-items: center
+    &__icon
+      &--home
+        margin-right: 6px
+      &--prew
+        margin-right: 8px
+      &--next
+        margin-left: 8px
+  &-title
+    max-width: 750px
+    font-style: normal
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    color: #FFFFFF
+    margin-bottom: 30px
+  &-text
+    max-width: 632px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: #FFFFFF
+    opacity: 0.85
+    margin-bottom: 45px
+  &-footer
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    opacity: 0.85
+    &__icon
+      margin-right: 6px
+      &--comment
+        margin-left: 21px
+    &__date
+      margin-right: 21px
+  &-author
+    position: absolute
+    right: 0
+    bottom: -196px
+    width: 263px
+    height: 296px
+    padding-top: 35px
+    padding-bottom: 15px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background-color: #fff
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 15px
+    &__name
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 5px
+    &__profession
+      display: inline-block
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+      color: $color-text
+    &__publication
+      width: 100%
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      padding-bottom: 20px
+      border-bottom: 1px solid #D9DADB
+    &__page
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      margin-top: 15px
