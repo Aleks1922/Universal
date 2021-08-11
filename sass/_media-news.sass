@@ -35,6 +35,17 @@
     #6E99AE 800px, #6E99AE 940px,
     )
 
+  .main
+    max-height: 500px
+    &-wrapper
+      padding: 40px 0
+    &-title
+      font-size: 44px
+      line-height: 60px
+  .articles
+    &-item
+      width: 220px
+
 @media ( max-width: 992px  )
   .container
     max-width: 740px
@@ -72,6 +83,46 @@
     #6E99AE 635px, #6E99AE 740px,
     )
 
+  .main
+    max-height: 500px
+    &-wrapper
+      padding: 40px 0
+    &-title
+      font-size: 36px
+      line-height: 40px
+    &-author
+      width: 180px
+      height: 180px
+      padding-top: 15px
+      bottom: -60px
+      &__avatar
+        width: 60px
+        height: 60px
+        object-fit: cover
+      &__name
+        font-size: 16px
+        line-height: 22px
+      &__profession
+        margin-bottom: 10px
+      &__publication
+        display: none
+      &__page
+        margin: 0
+  .text
+    &-article
+      display: none
+  .publication
+    &-slider
+      &__info
+        width: 450px
+      &__button
+        width: 45px
+        height: 45px
+        background-size: cover
+  .articles
+    &-item
+      width: 220px
+
 @media ( max-width: 768px  )
   .container
     max-width: 540px
@@ -79,6 +130,7 @@
     position: fixed
     width: 100%
     z-index: 99
+    background-color: #dce0e4
     &-navbar
       padding: 10px 0
       top: 0

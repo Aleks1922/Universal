@@ -123,7 +123,27 @@ $(document).ready(function () {
     loop: true,
 
     speed: 1000,
+
+    navigation: {
+      nextEl: '.publication-slider__button--next',
+      prevEl: '.publication-slider__button--prev',
+    },
+
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
   });
+
+  const commentMore = document.querySelector('.comment-more');
+  if (commentMore) {
+    const commentOther = document.querySelector('.comment-other');
+    commentMore.addEventListener("click", function (e) {
+      commentMore.classList.toggle('header-menu__icon--active');
+      commentOther.classList.toggle('comment-other--visible');
+    });
+  }
 
 
 });
