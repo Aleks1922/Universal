@@ -66,7 +66,7 @@ $(document).ready(function () {
     // Если не удалось отправить запрос. Стоит блок на хостинге
     req.onerror = function () { alert("Ошибка отправки запроса"); };
     req.send(new FormData(event.target));
-  }
+  };
 
   const iconMenu = document.querySelector('.header-menu__icon');
   if (iconMenu) {
@@ -76,7 +76,7 @@ $(document).ready(function () {
       iconMenu.classList.toggle('header-menu__icon--active');
       menuBody.classList.toggle('header-menu--active');
     });
-  }
+  };
 
   //mask phone
   $('.phone-with-ddd').mask('+7 (000) 000-00-00');
@@ -144,6 +144,53 @@ $(document).ready(function () {
       commentOther.classList.toggle('comment-other--visible');
     });
   }
+
+  const menuLinks = document.querySelectorAll('.header-menu__link[data-goto]');
+  if (menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick)
+    });
+
+    function onMenuLinkClick(e) {
+      const menuLink = e.target;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+        const gotoBlock = document.querySelector(menuLink.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: "smooth"
+        });
+        e.preventDefault();
+      }
+    }
+  }
+
+  var newsIcon = $(".main__icon");
+
+  newsIcon.on("click", function (event) {
+    $(this).toggleClass('main__icon--active');
+  })
+
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста введите имя",
+          minlength: "Ваше имя не должно быть короче 2х символов"
+        },
+        email: {
+          required: "Введите ваш контактный email адрес",
+          email: "Ваш email адрес должен быть в формате name@domain.com"
+        },
+        phone: {
+          required: "Пожалуйста введите ваш номер телефона",
+          minlength: "Ваш номер слишком короткий"
+        },
+      }
+    });
+  })
 
 
 });

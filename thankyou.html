@@ -44,16 +44,13 @@
       </div>
     </div>
   </header>
-  <section class="section-main">
-    <div class="container main-container">
-      <h1 class="title content-title">Спасибо за регистрацию</h1>
-      <button class="button content-button">
-        <a href="index.html" class="content-link">
-          Вернуться на главную
-          <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-        </a>
-      </button>
-      </article>
+  <section class="tnx">
+    <div class="container tnx-container">
+      <h1 class="title tnx-title">Спасибо за регистрацию</h1>
+      <a href="index.html" class="button-link content-link">
+        Вернуться на главную
+        <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
+      </a>
     </div>
   </section>
   <footer class="footer">
@@ -61,8 +58,10 @@
       <div class="subscribe">
         <form action="send.php" method="POST" class="form subscribe__form">
           <h2 class="title subscribe-title">Подпишитесь на нашу рассылку</h2>
-          <input type="email" class="input subscribe__input" placeholder="Email" name="email" required>
-          <button class="button subscribe__button">Подписаться</button>
+          <div class="input-group">
+            <input type="email" class="input subscribe__input" placeholder="Email" name="email" required>
+            <button class="button subscribe__button">Подписаться</button>
+          </div>
         </form>
       </div>
       <!-- /.subscribe -->
@@ -188,8 +187,8 @@
           <li class="footer-contacts__item">
             <a href="" class="footer-contacts__link">Реклама</a>
           </li>
-          <li class="footer-contacts__item">
-            <a href="" class="footer-contacts__link">Обратная связь</a>
+          <li data-toggle="modal" class="footer-contacts__item footer-contacts__link">
+            Обратная связь
           </li>
         </ul>
         <div class="footer-social">
@@ -253,6 +252,7 @@
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

@@ -503,6 +503,40 @@ img {
   line-height: 20px;
 }
 
+.input-group {
+  position: relative;
+  display: inline-block;
+}
+
+.input-group--message {
+  width: 100%;
+}
+
+label.invalid {
+  width: 300px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #4592FF;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+label.invalid::after {
+  content: '';
+  position: absolute;
+  left: 15px;
+  bottom: -5px;
+  background-color: #4592FF;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .header {
   background-color: #fff;
 }
@@ -592,6 +626,20 @@ img {
   left: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(38, 45, 51, 0.75)), to(rgba(38, 45, 51, 0.75)));
   background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75));
+}
+
+.main__icon {
+  width: 21px;
+  height: 27px;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  cursor: pointer;
+  fill: #BCBFC2;
+}
+
+.main__icon--active {
+  fill: #FF4F52;
 }
 
 .main-container {
@@ -799,6 +847,7 @@ img {
 
 .text-start {
   max-width: 622px;
+  margin-bottom: 60px;
 }
 
 .text-start__image {
@@ -830,11 +879,13 @@ img {
   line-height: 30px;
   color: #262D33;
   margin-bottom: 30px;
+  margin-top: 45px;
 }
 
 .text-start__title--2nd {
   position: relative;
   z-index: 2;
+  margin-top: 80px;
 }
 
 .text-start__title--2nd::before {
@@ -914,6 +965,7 @@ img {
 }
 
 .text-tag__link {
+  display: inline-block;
   padding: 5px 15px;
   margin-right: 10px;
   font-weight: 900;
@@ -1355,7 +1407,7 @@ img {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
-  margin-left: 126px;
+  margin-left: 96px;
   margin-bottom: 15px;
 }
 
@@ -1369,7 +1421,7 @@ img {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 20px;
   overflow: hidden;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1410,6 +1462,10 @@ img {
   background-color: #fff;
 }
 
+.footer-logo {
+  cursor: pointer;
+}
+
 .footer-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1435,6 +1491,8 @@ img {
   line-height: 20px;
   color: #262D33;
   margin-bottom: 25px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .footer__item {
@@ -1481,6 +1539,10 @@ img {
 .footer-contacts__link {
   color: inherit;
   margin-left: 30px;
+}
+
+.footer-contacts__item {
+  cursor: pointer;
 }
 
 .footer-social {
@@ -1847,6 +1909,27 @@ img {
   .articles-item__footer {
     -ms-grid-column-align: end;
         justify-self: end;
+  }
+}
+
+@media (min-width: 992px) {
+  .button:hover {
+    background: #7a97c0;
+  }
+  .button-link:hover {
+    background: #7a97c0;
+  }
+  .header-menu__link:hover {
+    text-decoration: underline;
+  }
+  .text-tag__link:hover {
+    background-color: #D9DADB;
+  }
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+  .footer__subtitle:hover {
+    color: #4B5157;
   }
 }
 

@@ -133,6 +133,31 @@
       &__footer
         justify-self: end
 
+@media ( min-width: 992px )
+  .button
+    &:hover
+      background: #7a97c0
+  .button-link
+    &:hover
+      background: #7a97c0
+  .header
+    &-menu
+      &__link
+        &:hover
+          text-decoration: underline
+  .text
+    &-tag
+      &__link
+        &:hover
+          background-color: #D9DADB
+  .footer
+    &__link
+      &:hover
+        text-decoration: underline
+    &__subtitle
+      &:hover
+        color: $color-text
+
 @media ( max-width: 768px  )
   .container
     max-width: 540px
@@ -484,5 +509,3 @@
       &__avatar
         width: 30px
         height: 30px
-
-

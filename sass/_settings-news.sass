@@ -65,3 +65,31 @@ img
   font-weight: 900
   font-size: 14px
   line-height: 20px
+
+.input-group
+  position: relative
+  display: inline-block
+  &--message
+    width: 100%
+
+label.invalid
+  width: 300px
+  position: absolute
+  top: -40px
+  left: 0
+  background: #4592FF
+  font-size: 14px
+  line-height: 16px
+  color: #fff
+  padding: 5px 10px
+  border-radius: 8px
+  &::after
+    content: ''
+    position: absolute
+    left: 15px
+    bottom: -5px
+    background-color: #4592FF
+    width: 10px
+    height: 10px
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)

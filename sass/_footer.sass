@@ -1,5 +1,7 @@
 .footer
   background-color: #fff
+  &-logo
+    cursor: pointer
   &-navbar
     display: flex
     height: 240px
@@ -17,6 +19,7 @@
     line-height: 20px
     color: $color-title
     margin-bottom: 25px
+    transition: all 0.5s ease
   &__item
     font-style: normal
     font-weight: normal
@@ -45,6 +48,8 @@
     &__link
       color: inherit
       margin-left: 30px
+    &__item
+      cursor: pointer
   &-social
     display: flex
     margin-left: auto

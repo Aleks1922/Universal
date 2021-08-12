@@ -25,13 +25,14 @@
           <li class="header-menu__item header-menu__item--mobile">
             <button data-toggle="modal" class="button header-button">ОСТАВИТЬ ЗАЯВКУ</button>
           </li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Статьи</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Горячее</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">HTML</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">CSS</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">JavaScript</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Web Design</a></li>
+          <li class="header-menu__item"><a data-goto=".section-article" href="#" class="header-menu__link">Статьи</a>
+          </li>
+          <li class="header-menu__item"><a data-goto=".section-news" href="#" class="header-menu__link">Новости</a></li>
+          <li class="header-menu__item"><a data-goto=".section-hot" href="#" class="header-menu__link">Горячее</a></li>
+          <li class="header-menu__item"><a data-goto=".footer" href="#" class="header-menu__link">HTML</a></li>
+          <li class="header-menu__item"><a data-goto=".footer" href="#" class="header-menu__link">CSS</a></li>
+          <li class="header-menu__item"><a data-goto=".footer" href="#" class="header-menu__link">JavaScript</a></li>
+          <li class="header-menu__item"><a data-goto=".footer" href="#" class="header-menu__link">Web Design</a></li>
         </ul>
         <button data-toggle="modal" class="button header-button header-button--mobile">ОСТАВИТЬ ЗАЯВКУ</button>
         <button class="header-menu__icon">
@@ -42,7 +43,7 @@
       </div>
     </div>
   </header>
-  <section class="section-main">
+  <div class="section-main">
     <div class="container main-container">
       <article class="main-content">
         <div class="content content--active" id="js">
@@ -58,13 +59,11 @@
             </div>
             <div class="content-info">
               <span class="content-tag">Javascript</span>
-              <h1 class="title content-title">Расширение Chrome <br>защищает от атак</h1>
-              <button class="button content-button">
-                <a href="#" class="content-link">
-                  Читать далее
-                  <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-                </a>
-              </button>
+              <h2 class="title content-title">Расширение Chrome <br>защищает от атак</h2>
+              <a href="news.html" class="button-link content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-link__arrow">
+              </a>
             </div>
           </div>
         </div>
@@ -81,13 +80,11 @@
             </div>
             <div class="content-info">
               <span class="content-tag">HTML</span>
-              <h1 class="title content-title">Правильно вставляем картинку на сайт для Retina дисплея</h1>
-              <button class="button content-button">
-                <a href="#" class="content-link">
-                  Читать далее
-                  <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-                </a>
-              </button>
+              <h2 class="title content-title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+              <a href="news.html" class="button-link content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-link__arrow">
+              </a>
             </div>
           </div>
         </div>
@@ -104,13 +101,11 @@
             </div>
             <div class="content-info">
               <span class="content-tag">CSS</span>
-              <h1 class="title content-title">Как использовать CSS float <br> после того, как вышел Flexbox</h1>
-              <button class="button content-button">
-                <a href="#" class="content-link">
-                  Читать далее
-                  <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-                </a>
-              </button>
+              <h2 class="title content-title">Как использовать CSS float <br> после того, как вышел Flexbox</h2>
+              <a href="news.html" class="button-link content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-link__arrow">
+              </a>
             </div>
           </div>
         </div>
@@ -127,13 +122,11 @@
             </div>
             <div class="content-info">
               <span class="content-tag">Web design</span>
-              <h1 class="title content-title">ТОП-10 плагинов для Figma</h1>
-              <button class="button content-button">
-                <a href="#" class="content-link">
-                  Читать далее
-                  <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-                </a>
-              </button>
+              <h2 class="title content-title">ТОП-10 плагинов для Figma</h2>
+              <a href="news.html" class="button-link content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-link__arrow">
+              </a>
             </div>
           </div>
         </div>
@@ -150,13 +143,11 @@
             </div>
             <div class="content-info">
               <span class="content-tag">CSS</span>
-              <h1 class="title content-title">Возможности CSS Grid Layout, <br> которые уже можно применять</h1>
-              <button class="button content-button">
-                <a href="#" class="content-link">
-                  Читать далее
-                  <img src="img/Arrow.svg" alt="icon: arrow" class="content-button__arrow">
-                </a>
-              </button>
+              <h2 class="title content-title">Возможности CSS Grid Layout, <br> которые уже можно применять</h2>
+              <a href="news.html" class="button-link content-link">
+                Читать далее
+                <img src="img/Arrow.svg" alt="icon: arrow" class="content-link__arrow">
+              </a>
             </div>
           </div>
         </div>
@@ -195,7 +186,7 @@
         </aside>
       </article>
     </div>
-  </section>
+  </div>
   <section class="interesting">
     <div class="container">
       <ul class="interesting__list">
@@ -218,7 +209,7 @@
       </ul>
     </div>
   </section>
-  <section class="article">
+  <section class="article section-article">
     <div class="container">
       <div class="article-grid">
         <a href="#" class="article-article">
@@ -344,15 +335,13 @@
   <section class="coin">
     <div class="container">
       <h2 class="title coin-title">Расследование недели: сколько <br> зарабатывает веб разработчик в Москве</h2>
-      <a href="#" class="coin-link">
-        <button class="button coin-button">
-          <span class="coin-button__text">Читать статью</span>
-          <img src="img/Arrow.svg" alt="icon: arrow" class="coin-button__icon">
-        </button>
+      <a href="news.html" class="button-link coin-link">
+        <span class="coin-link__text">Читать статью</span>
+        <img src="img/Arrow.svg" alt="icon: arrow" class="coin-link__icon">
       </a>
     </div>
   </section>
-  <section class="news">
+  <div class="news section-news">
     <div class="container news-container">
       <article class="news-block">
         <div class="news-item">
@@ -559,8 +548,8 @@
         <a href="#" class="news-publication__link">Read more</a>
       </aside>
     </div>
-  </section>
-  <section class="hot">
+  </div>
+  <section class="hot section-hot">
     <div class="container hot-container">
       <div class="hot-slider">
         <!-- Slider main container -->
@@ -673,10 +662,10 @@
             <p class="article-big__text">Каверзные и не очень вопросы, которых боятся новички, когда идут на
               собеседование
             </p>
-            <button class="button article-big__button">
+            <a href="news.html" class="button-link article-big__link">
               <span>Читать далее</span>
               <img class="article-big__icon" src="img/Arrow.svg" alt="icon: arrow">
-            </button>
+            </a>
           </div>
         </div>
         <div class="article-little-wrapper">
@@ -700,8 +689,10 @@
       <div class="subscribe">
         <form action="send.php" method="POST" class="form subscribe__form">
           <h2 class="title subscribe-title">Подпишитесь на нашу рассылку</h2>
-          <input type="email" class="input subscribe__input" placeholder="Email" name="email" required>
-          <button class="button subscribe__button">Подписаться</button>
+          <div class="input-group">
+            <input type="email" class="input subscribe__input" placeholder="Email" name="email" required>
+            <button class="button subscribe__button">Подписаться</button>
+          </div>
         </form>
       </div>
       <!-- /.subscribe -->
@@ -827,8 +818,8 @@
           <li class="footer-contacts__item">
             <a href="" class="footer-contacts__link">Реклама</a>
           </li>
-          <li class="footer-contacts__item">
-            <a href="" class="footer-contacts__link">Обратная связь</a>
+          <li data-toggle="modal" class="footer-contacts__item footer-contacts__link">
+            Обратная связь
           </li>
         </ul>
         <div class="footer-social">
@@ -894,6 +885,7 @@
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 
