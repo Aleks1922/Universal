@@ -1,0 +1,167 @@
+.comment
+  padding-top: 60px
+  &-wrapper
+    max-width: 750px
+  &-header
+    display: flex
+    align-items: center
+    margin-bottom: 29px
+    &__title
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      margin-right: 10px
+    &__count
+      font-weight: normal
+      font-size: 40px
+      line-height: 50px
+      text-transform: uppercase
+      color: #939699
+    &__button
+      display: flex
+      align-items: center
+      padding: 10px 20px
+      margin-left: auto
+      background-color: #fff
+      border: 1px solid #D9DADB
+      border-radius: 20px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $color-title
+    &__icon
+      margin-right: 11px
+  &-item
+    display: flex
+    border-top: 1px solid #D9DADB
+    padding: 20px 0 30px 0
+    &--answer
+      justify-content: end
+    &__avatar
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      overflow: hidden
+      margin-right: 15px
+      flex-shrink: 0
+    &__photo
+      height: 100%
+      object-fit: cover
+    &__content
+      width: 570px
+    &__author
+      display: flex
+      align-items: center
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      margin-right: 10px
+    &__date
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 15px
+  &-footer
+    display: flex
+    align-items: center
+    &__answer
+      display: flex
+      align-items: center
+      background: transparent
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #262D33
+      margin-right: 16px
+    &__icon
+      margin-right: 6px
+    &__like
+      background: transparent
+      width: 13.5px
+      height: 12.75px
+      background-image: url(../img/like-com.svg)
+      margin-right: 11px
+    &__dislike
+      background: transparent
+      width: 13.5px
+      height: 12.75px
+      background-image: url(../img/dislike.svg)
+      margin-left: 11px
+    &__count
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+      &--like
+        color: #3DC47E
+      &--dislike
+        color: #FF4F52
+  &-more
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px 30px
+    background-color: #fff
+    border: 1px solid #D9DADB
+    border-radius: 25px
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $color-title
+    margin-bottom: 60px
+    &__icon
+      margin-right: 8px
+  &-other
+    display: none
+    &--visible
+      display: block
+  &-active
+    background: #F5F5F5
+    border-radius: 10px
+    padding: 30px 40px 35px 30px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      margin-left: 96px
+      margin-bottom: 15px
+    &__content
+      display: flex
+    &__avatar
+      width: 75px
+      height: 75px
+      border-radius: 50%
+      margin-right: 20px
+      overflow: hidden
+      flex-shrink: 0
+    &__wrapper
+      width: 590px
+    &__message
+      width: 100%
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      min-height: 130px
+      margin-bottom: 25px
+      padding: 10px
+      resize: none
+    &__button
+      display: flex
+      align-items: center
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      padding: 10px 20px
+    &__icon
+      margin-left: 8px

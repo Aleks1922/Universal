@@ -1,0 +1,56 @@
+.publication
+  margin-bottom: 45px
+  &-slider
+    border-radius: 10px
+    border: 1px solid #D9DADB
+    position: relative
+    &__item
+      border-right: 1px solid #D9DADB
+    &__footer
+      display: flex
+      align-items: center
+      justify-content: space-between
+      height: 70px
+      padding: 0 35px
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      position: relative
+      &::after
+        position: absolute
+        content: ''
+        width: 1px
+        height: 100%
+        background-color: #D9DADB
+        top: 0
+        right: 262px
+    &__author
+      display: flex
+      align-items: center
+    &__avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      margin-right: 10px
+    &__name
+      display: block
+      margin-bottom: 2px
+    &__profession
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-100%)
+      width: 60px
+      height: 60px
+      z-index: 2
+      background-color: transparent
+      &--prev
+        left: 35px
+        background-image: url(../img/Arrow-slide-left.svg)
+      &--next
+        right: 35px
+        background-image: url(../img/Arrow-slide-rigth.svg)

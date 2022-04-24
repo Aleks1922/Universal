@@ -1,0 +1,120 @@
+@font-face
+  font-family: 'Lato'
+  src: url('../Fonts/Lato-Black.eot')
+  src: url('../Fonts/Lato-Black.eot?#iefix') format('embedded-opentype'), url('../Fonts/Lato-Black.woff') format('woff'),
+  url('../Fonts/Lato-Black.ttf') format('truetype'),
+  url('../Fonts/Lato-Black.svg#Lato-Black') format('svg')
+  font-weight: 900
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Lato'
+  src: url('../Fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),url('../Fonts/Lato-Regular.woff2') format('woff2'),url('../Fonts/Lato-Regular.woff') format('woff'),url('../Fonts/Lato-Regular.ttf') format('truetype'),url('../Fonts/Lato-Regular.svg#Lato-Regular') format('svg')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Roboto Slab'
+  src: url('../Fonts/RobotoSlab-Bold.eot')
+  src: url('../Fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),url('../Fonts/RobotoSlab-Bold.woff2') format('woff2'),url('../Fonts/RobotoSlab-Bold.woff') format('woff'),url('../Fonts/RobotoSlab-Bold.ttf') format('truetype'),url('../Fonts/RobotoSlab-Bold.svg#RobotoSlab-Bold') format('svg')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+html,
+body
+  height: 100%
+  width: 100%
+  font-size: 100%
+  line-height: 1
+  font-family: 'Lato'
+  background: #E5E5E5
+
+.title
+  font-family: 'Roboto Slab', sans-serif
+
+.container
+  max-width: 1140px
+  margin: auto
+
+.lock
+  overflow: hidden
+
+img
+  max-width: 100%
+
+.input
+  padding: 10px 15px
+  background: #FFFFFF
+  border: 1px solid #D9DADB
+  border-radius: 5px
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: $color-text
+  font-size: 14px
+  line-height: 18px
+
+::placeholder
+  color: #939699
+
+.button
+  background: #4592FF
+  font-family: 'Lato'
+  color: #fff
+  border-radius: 20px
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  transition: background 0.3s ease
+
+.button-link
+  background: #4592FF
+  font-family: 'Lato'
+  color: #fff
+  display: inline-flex
+  border-radius: 20px
+  font-style: normal
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+  transition: background 0.3s ease
+.tnx
+  padding: 50px 0
+
+  &-title
+    color: $color-title
+    margin-bottom: 20px
+    font-weight: 900
+    font-size: 40px
+    line-height: 50px
+
+.input-group
+  position: relative
+  display: inline-block
+
+label.invalid
+  width: 300px
+  position: absolute
+  top: -40px
+  left: 0
+  background: #4592FF
+  font-size: 14px
+  line-height: 16px
+  color: #fff
+  padding: 5px 10px
+  border-radius: 8px
+  &::after
+    content: ''
+    position: absolute
+    left: 15px
+    bottom: -5px
+    background-color: #4592FF
+    width: 10px
+    height: 10px
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)

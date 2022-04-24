@@ -1,0 +1,134 @@
+.news
+  margin-bottom: 60px
+  &-container
+    display: flex
+    align-items: start
+  &-block
+    width: 848px
+    background-color: #fff
+    padding: 25px
+    border-radius: 10px
+    margin-right: 29px
+  &-item
+    display: flex
+    padding: 25px 0
+    border-bottom: 1px solid #D9DADB
+    position: relative
+    &:nth-of-type(1)
+      padding-top: 0
+    &:nth-of-type(6)
+      padding-bottom: 0
+      border: none
+    &__image
+      width: 336px
+      height: 195px
+      flex-shrink: 0
+      margin-right: 25px
+    &__info
+    &__tag
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      margin-bottom: 15px
+      &--1st
+        color: #4592FF
+      &--2nd
+        color: #3BBDC4
+      &--3rd
+        color: #FF4F52
+      &--4th
+        color: #AC8EE3
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 10px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $color-text
+      margin-bottom: 20px
+    &__stats
+      display: flex
+      align-items: center
+      font-size: 12px
+      line-height: 15px
+      display: flex
+      align-items: center
+      color: #939699
+    &__date
+      margin-right: 12px
+    &__comment
+      margin-right: 6px
+    &__like
+      margin-left: 12px
+      margin-right: 6px
+  &-publication
+    background-color: #fff
+    padding: 20px 25px
+    border-radius: 10px
+    width: 263px
+    align-items: start
+    &__title
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      text-transform: uppercase
+      padding-bottom: 20px
+      border-bottom: 1px solid #D9DADB
+    &__item
+      display: flex
+      align-items: center
+      padding: 17px 0
+      border-bottom: 1px solid #D9DADB
+      position: relative
+    &__image
+      width: 60px
+      height: 60px
+      margin-right: 10px
+      flex-shrink: 0
+    &__subtitle
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 5px
+      color: $color-text
+    &__time
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__number
+      position: absolute
+      width: 41px
+      height: 50px
+      top: 20px
+      right: 0
+    &__link
+      display: block
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $color-title
+      text-align: center
+      margin-top: 11px
+  &__icon
+    width: 14px
+    position: absolute
+    top: 26px
+    right: 3px
+    cursor: pointer
+    fill: #BCBFC2
+    &--top
+      top: 1px
+    &--active
+      fill: #FF4F52

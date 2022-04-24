@@ -1,0 +1,117 @@
+.text
+  background-color: #fff
+  &-start
+    max-width: 622px
+    margin-bottom: 60px
+    &__image
+      width: 96px
+      height: 75px
+      float: left
+      margin-right: 10px
+      margin-bottom: 8px
+    &__paragraph
+      display: block
+      margin-bottom: 30px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 30px
+      color: $color-text
+      &--mb
+        margin-bottom: 0
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $color-title
+      margin-bottom: 30px
+      margin-top: 45px
+      &--2nd
+        position: relative
+        z-index: 2
+        margin-top: 80px
+        &::before
+          position: absolute
+          z-index: -1
+          top: -20px
+          left: -20px
+          content: ''
+          width: 70px
+          height: 70px
+          background-image: url(../img/Quote.svg)
+  &-article
+    width: 263px
+    position: absolute
+    top: 150px
+    right: 0
+    &__title
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 20px
+    &__image
+      border-radius: 10px
+      margin-bottom: 15px
+      overflow: hidden
+    &__subtitle
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      margin-bottom: 5px
+    &__text
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 20px
+    &__footer
+      display: flex
+      align-items: center
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__icon
+      margin-right: 5px
+      &:nth-of-type(2)
+        margin-left: 11px
+  &-tag
+    display: flex
+    align-items: center
+    padding: 15px 0 30px 0
+    margin-bottom: 30px
+    &__link
+      display: inline-block
+      padding: 5px 15px
+      margin-right: 10px
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $color-text
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      cursor: pointer
+  &-social
+    padding: 30px 0
+    border-top: 1px solid #D9DADB
+    &__title
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      margin-bottom: 25px
+    &__wrapper
+      display: flex
+      align-items: center
+    &__button
+      height: 40px
+      min-width: 140px
+      display: inline-flex
+      align-items: center
+      justify-content: space-between
+      padding: 10px 25px
+      margin-right: 14px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__name
+      font-weight: 900

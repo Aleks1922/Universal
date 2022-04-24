@@ -1,0 +1,511 @@
+@media ( max-width: 1200px  )
+  .container
+    max-width: 940px
+  .header
+    margin-bottom: 20px
+    &-menu
+      width: 100%
+      order: 3
+      margin-top: 10px
+  .recomended
+    width: 255px
+    flex-shrink: 0
+    &-block
+      width: 100%
+  .interesting
+    &__list
+      padding: 25px 0
+    &__item
+      padding: 0 15px
+  .footer
+    &-bottom
+      flex-direction: column
+      align-items: start
+      justify-content: center
+      &__text
+        max-width: 100%
+        margin-bottom: 20px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   160px,
+    #AC8EE3  160px, #AC8EE3  320px,
+    #4592FF  320px, #4592FF  480px,
+    #FFA34D  480px, #FFA34D  640px,
+    #3DC47E  640px, #3DC47E  800px,
+    #6E99AE 800px, #6E99AE 940px,
+    )
+
+  .main
+    max-height: 500px
+    &-wrapper
+      padding: 40px 0
+    &-title
+      font-size: 44px
+      line-height: 60px
+  .articles
+    &-item
+      width: 220px
+
+@media ( max-width: 992px  )
+  .container
+    max-width: 740px
+  .header
+    &-navbar
+      padding: 10px 0
+    &-menu
+      width: 100%
+      order: 3
+      margin-top: 10px
+    &-button
+      width: 240px
+  .footer
+    &__subtitle
+      margin-bottom: 15px
+    &__item
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 16px
+    &-midle
+      flex-wrap: wrap
+      height: 120px
+      padding: 10px 0
+    &-contacts
+      justify-content: space-between
+      margin-left: auto
+      height: 50px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   127px,
+    #AC8EE3  127px, #AC8EE3  254px,
+    #4592FF  254px, #4592FF  381px,
+    #FFA34D  381px, #FFA34D  508px,
+    #3DC47E  508px, #3DC47E  635px,
+    #6E99AE 635px, #6E99AE 740px,
+    )
+
+  .news
+    &-wrapper
+      max-width: 740px
+      min-width: 740px
+  .main
+    max-height: 500px
+    &-wrapper
+      padding: 40px 0
+    &-title
+      font-size: 36px
+      line-height: 40px
+    &-author
+      width: 180px
+      height: 180px
+      padding-top: 15px
+      bottom: -60px
+      &__avatar
+        width: 60px
+        height: 60px
+        object-fit: cover
+      &__name
+        font-size: 16px
+        line-height: 22px
+      &__profession
+        margin-bottom: 10px
+      &__publication
+        display: none
+      &__page
+        margin: 0
+  .text
+    &-article
+      display: none
+  .publication
+    &-slider
+      &__info
+        width: 450px
+      &__button
+        width: 45px
+        height: 45px
+        background-size: cover
+  .articles
+    &-item
+      width: 220px
+      display: flex
+      flex-wrap: wrap
+      &__image
+        height: 110px
+      &__footer
+        justify-self: end
+
+@media ( min-width: 992px )
+  .button
+    &:hover
+      background: #7a97c0
+  .button-link
+    &:hover
+      background: #7a97c0
+  .header
+    &-menu
+      &__link
+        &:hover
+          text-decoration: underline
+  .text
+    &-tag
+      &__link
+        &:hover
+          background-color: #D9DADB
+  .footer
+    &__link
+      &:hover
+        text-decoration: underline
+    &__subtitle
+      &:hover
+        color: $color-text
+
+@media ( max-width: 768px  )
+  .container
+    max-width: 540px
+  .header
+    position: fixed
+    width: 100%
+    z-index: 99
+    background-color: #dce0e4
+    &-navbar
+      padding: 10px 0
+      top: 0
+      left: 0
+      z-index: 5
+    &-button
+      &--mobile
+        display: none
+    &-menu
+      position: fixed
+      top: 53px
+      left: -100%
+      width: 100%
+      bottom: 0
+      background-color: #091a1bfa
+      padding: 100px 30px 30px 30px
+      transition: left 0.3s ease 0s
+      overflow: auto
+      display: flex
+      flex-direction: column
+      justify-content: start
+      font-size: 24px
+      line-height: 32px
+      padding-top: 30px
+      z-index: 1000000000000
+      &--active
+        left: 0
+      &__icon
+        z-index: 5
+        display: block
+        position: relative
+        width: 30px
+        height: 18px
+        cursor: pointer
+        background-color: transparent
+        &--active .header-menu__elem--1
+          top: 50%
+          transform: rotate(45deg) translate(0px, -50%)
+        &--active .header-menu__elem--2
+          transform: scale(0)
+        &--active .header-menu__elem--3
+          top: 50%
+          transform: rotate(-45deg) translate(1px, 50%)
+      &__item
+        margin-bottom: 30px
+        &--mobile
+          display: block
+      &__elem
+        left: 0
+        position: absolute
+        height: 2px
+        width: 100%
+        transition: all 0.3s ease 0s
+        background-color: #939699
+        &--1
+          top: 0
+        &--2
+          top: 49%
+        &--3
+          bottom: 0
+
+  .subscribe
+    padding: 30px 0 50px 0
+    &-title
+      text-align: left
+      margin-bottom: 0
+      font-size: 32px
+      line-height: 40px
+      flex: 1 1 50%
+    &__form
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: 0
+    &__button
+      flex: 0 1 40%
+      margin-top: 20px
+    &__input
+      width: 214px
+  .footer
+    &-navbar
+      flex-wrap: wrap
+      height: 346px
+    &__list
+      flex: 0 0 33.3%
+      margin-bottom: 20px
+    &__subtitle
+      margin-bottom: 15px
+    &__item
+      margin-bottom: 10px
+      font-size: 12px
+      line-height: 16px
+    &-midle
+      flex-wrap: wrap
+      height: 120px
+      padding: 10px 0
+      justify-content: space-between
+    &-contacts
+      justify-content: space-between
+      margin-left: auto
+      flex-wrap: wrap
+      font-size: 12px
+      line-height: 16px
+      margin-left: 0
+      &__item
+        flex: 0 0 50%
+        gap: 20px
+      &__link
+        margin: 0
+    &-social
+      width: 110px
+      flex-wrap: wrap
+      margin-left: 0
+      &__link
+        margin-left: 10px
+        margin-bottom: 10px
+  .color-line
+    background: repeating-linear-gradient(to right,
+    #FF4F52   0, #FF4F52   90px,
+    #AC8EE3  90px, #AC8EE3  180px,
+    #4592FF  180px, #4592FF  270px,
+    #FFA34D  270px, #FFA34D  360px,
+    #3DC47E  360px, #3DC47E  450px,
+    #6E99AE 450px, #6E99AE 540px,
+    )
+
+  .news
+    &-wrapper
+      max-width: 540px
+      min-width: 540px
+  .main
+    max-height: 500px
+    height: 400px
+    &-wrapper
+      padding: 40px 0
+      padding-top: 100px
+    &-title
+      font-size: 24px
+      line-height: 32px
+      max-width: 400px
+    &-text
+      display: none
+    &-author
+      width: 140px
+      height: 140px
+      padding-top: 15px
+      bottom: -100px
+      display: flex
+      align-items: center
+      flex-direction: column
+      &__avatar
+        width: 45px
+        height: 45px
+        flex-shrink: 0
+      &__name
+        font-size: 16px
+        line-height: 22px
+      &__profession
+        display: none
+      &__publication
+        display: none
+      &__page
+        margin: 0
+  .text
+    &-article
+      display: none
+  .publication
+    &-slider
+      &__info
+        display: none
+      &__button
+        width: 30px
+        height: 30px
+        &--prev
+          left: 20px
+        &--next
+          right: 20px
+      &__footer
+        height: 50px
+        &::after
+          display: none
+      &__author
+        margin-left: auto
+      &__avatar
+        width: 30px
+        height: 30px
+  .articles
+    padding-bottom: 40px
+    &-container
+      flex-wrap: wrap
+    &-item
+      width: 220px
+      &__image
+        height: 130px
+  .comment
+    &-header
+      &__title
+        font-size: 32px
+        line-height: 40px
+      &__count
+        font-size: 32px
+        line-height: 40px
+    &-item
+      &--answer
+        width: 470px
+        margin-left: auto
+      &__avatar
+        width: 60px
+        height: 60px
+
+@media ( max-width: 568px  )
+  .container
+    max-width: 480px
+    padding: 0 20px
+  .header
+    &-menu
+      min-width: 100%
+  .modal
+    &__dialog
+      width: 380px
+      max-width: 80%
+    &__input-group
+      margin-bottom: 10px
+      &--mobile
+        width: 100%
+    &__button
+      margin-right: 10px
+      margin-bottom: 10px
+    &__info
+      font-size: 10px
+  .subscribe
+    padding: 20px 0 40px 0
+    &-title
+      text-align: center
+      margin-bottom: 0
+      font-size: 22px
+      line-height: 28px
+      flex: 1 1 50%
+      margin-bottom: 10px
+    &__form
+      display: flex
+      flex-direction: column
+    &__button
+      flex: 0 1 40%
+      margin-top: 10px
+      margin-left: 0
+  .footer
+    &-navbar
+      flex-wrap: wrap
+      height: 530px
+      margin-bottom: 30px
+    &__list
+      flex: 0 0 50%
+    &-midle
+      height: 130px
+    &-contacts
+      width: 100%
+      justify-content: start
+      height: 50px
+      order: -1
+      margin-bottom: 10px
+      &__item
+        flex: 1 1 50%
+    &-social
+      width: 200px
+      flex-wrap: wrap
+      margin-left: 0
+      justify-content: end
+      margin-top: 0
+      &__link
+        margin: 0
+        margin-left: 10px
+    &-bottom
+      height: 180px
+  .news
+    &-wrapper
+      max-width: 480px
+      min-width: 300px
+      margin-left: 0
+  .main
+    &-header
+      &__item
+        &:nth-of-type(1)
+          display: none
+    &-author
+      flex-direction: row
+      align-items: center
+      padding: 5px
+      width: 200px
+      height: 50px
+      top: 375px
+      &__avatar
+        width: 30px
+        height: 30px
+        margin-bottom: 0
+        margin-right: 10px
+      &__page
+        display: none
+  .publication
+    &-slider
+      &__info
+        display: none
+      &__button
+        display: none
+  .text
+    &-tag
+      flex-wrap: wrap
+      &__link
+        margin-bottom: 10px
+    &-social
+      &__wrapper
+        flex-direction: column
+        align-items: start
+      &__button
+        margin-bottom: 10px
+  .articles
+    &-item
+      width: 100%
+    &__image
+      height: 160px
+  .comment
+    &-header
+      flex-direction: column
+      align-items: start
+      &__title
+        margin-bottom: 10px
+      &__count
+        display: none
+      &__button
+        margin-left: 0
+    &-item
+      &--answer
+        width: 300px
+      &__avatar
+        width: 30px
+        height: 30px
+    &-active
+      &__title
+        margin-left: 0
+      &__avatar
+        width: 30px
+        height: 30px
